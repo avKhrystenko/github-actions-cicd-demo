@@ -1,2 +1,22 @@
-# github-actions-cicd-demo
-Program i use to pass my class
+# Демонстраційний CI/CD-проєкт
+
+Навчальний статичний сайт для практичної роботи з GitHub Actions.
+
+## Локальний запуск
+Потрібен Node.js 22 або новіший.
+
+```bash
+npm run build
+npm test
+```
+
+Результат збірки створюється в каталозі `dist/`.
+
+## Увімкнення автоматичного розгортання
+1. Завантажте файли до GitHub-репозиторію у гілку `main`.
+2. Відкрийте **Settings → Pages**.
+3. У розділі **Build and deployment** виберіть **Source: GitHub Actions**.
+4. Відкрийте вкладку **Actions** і дочекайтеся успішного завершення workflow.
+5. Посилання на сайт буде в деталях виконання workflow або в **Settings → Pages**.
+
+Workflow запускається під час push до `main`, pull request до `main` і вручну через Actions. Для pull request виконуються збірка й тести, але розгортання не запускається.

@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; display: grid; place-items: center;
+  padding: 24px; font-family: Arial, sans-serif; color: #18313a;
+  background: #eaf7f6;
+}
+.card {
+  width: min(680px, 100%); padding: 40px; border-radius: 20px;
+  background: white; box-shadow: 0 14px 40px #174b4b18;
+}
+.tag { color: #087f8c; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+h1 { line-height: 1.15; }
+button {
+  padding: 12px 18px; border: 0; border-radius: 10px;
+  color: white; background: #087f8c; font-size: 1rem; cursor: pointer;
+}
+#result { min-height: 1.5em; font-weight: 700; }
